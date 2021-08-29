@@ -1,0 +1,59 @@
+.header {
+    padding-block: 24px;
+    text-align: center;
+
+    & .nav {
+
+        position: relative;
+        height: 60px;
+
+        &__list {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 18px;
+        }
+
+        &__item {
+            list-style: none;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: baseline;
+            text-align: center;
+        }
+
+        &__item--icon {
+            display: block;
+            width: 36px;
+            height: 36px;
+            background-position: center;
+            background-size: 28px 28px;
+            background-repeat: no-repeat;
+        }
+
+        &__item--icon.icon-projects {
+            background-image: url('../assets/icons/works-icon.png');
+        }
+
+        &__item--icon.icon-about-me{
+            background-image: url('../assets/icons/about-me-icon.png');
+        }
+
+        &__item--icon.icon-contact{
+            background-image: url('../assets/icons/contact-icon.png');
+        }
+
+        &__item--title {
+            display: block;
+            font-size: 1.8rem;
+            opacity: 0;
+        }
+
+        &__item:hover .nav__item--title {
+            opacity: 1;
+        }
+        
+
+    }
+}

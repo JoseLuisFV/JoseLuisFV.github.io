@@ -1,0 +1,29 @@
+$primary-color: #192C2D;
+$text-page-color: white;
+$text-projects-color: black;
+
+$copy-font: 'Comfortaa', cursive;
+$title-fonts: 'Martel', serif;
+$font-default-size: 1.6rem;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $primary-color;
+    font-family: $copy-font;
+    font-size: $font-default-size;
+    color: $text-page-color;
+}
+
+section h1{
+    font-family: $title-fonts;
+}

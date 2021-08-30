@@ -16,41 +16,44 @@
         }
 
         &__item {
+            display: block;
             list-style: none;
-            background-color: white;
-            border-radius: 50%;
-            vertical-align: baseline;
             text-align: center;
         }
 
-        &__item--icon {
+        @mixin setIcon($icon) {
             display: block;
-            width: 36px;
-            height: 36px;
-            background-position: center;
-            background-size: 28px 28px;
-            background-repeat: no-repeat;
+            width: 42px;
+            height: 42px;
+            margin: 0 auto 5px;
+            background: url($icon), white;
+            background-position: center, center;
+            background-size: 26px, 100%;
+            background-repeat: no-repeat, no-repeat;
+            border-radius: 50%;
         }
 
         &__item--icon.icon-projects {
-            background-image: url('../assets/icons/works-icon.png');
+            @include setIcon('../assets/icons/works-icon.png')
         }
 
         &__item--icon.icon-about-me{
-            background-image: url('../assets/icons/about-me-icon.png');
+            @include setIcon('../assets/icons/about-me-icon.png')
         }
 
         &__item--icon.icon-contact{
-            background-image: url('../assets/icons/contact-icon.png');
+            @include setIcon('../assets/icons/contact-icon.png')
         }
 
         &__item--title {
             display: block;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             opacity: 0;
+            transition: transform ease-in-out 350ms, opacity ease-in-out 350ms;
         }
 
         &__item:hover .nav__item--title {
+            transform: scale(1.2);
             opacity: 1;
         }
         

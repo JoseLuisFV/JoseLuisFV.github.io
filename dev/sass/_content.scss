@@ -1,0 +1,39 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+
+    &__wrapper--decorator {
+        position: relative;
+        width: 216px;
+        height: 216px;
+        margin-bottom: 14px;
+        background: linear-gradient(215deg, 
+        rgba(95,9,121,1), 
+        rgba(0,255,144,1) 90%);
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &__wrapper-img {
+        position: absolute;
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    
+    }
+
+    &__img {
+        position: relative;
+        top: -30px;
+        width: 100%;
+        height: auto;
+    }
+}

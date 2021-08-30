@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 34px 75px;
     width: 90%;
     margin: 0 auto;
 
@@ -11,6 +11,7 @@
         position: relative;
         width: 216px;
         height: 216px;
+        padding-top: 8px;
         margin-bottom: 14px;
         background: linear-gradient(215deg, 
         rgba(95,9,121,1), 
@@ -20,12 +21,11 @@
     }
 
     &__wrapper-img {
-        position: absolute;
-        top: calc(50% - 100px);
-        left: calc(50% - 100px);
         height: 200px;
         width: 200px;
+        margin: 0 auto;
         border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         overflow: hidden;
     
     }
@@ -35,5 +35,57 @@
         top: -30px;
         width: 100%;
         height: auto;
+    }
+
+    &__wrapper {
+        max-width: 640px;
+        padding: 30px 40px;
+        background-color: white;
+        border-radius: 16px;
+        border-bottom: 6px solid rgba(0,255,144,1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        background: -webkit-linear-gradient(rgba(0,255,144,1), #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__text {
+        line-height: 2.4rem;
+        margin-bottom: 16px;
+
+        @mixin setEspecialText ($font-color) {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: $font-color;
+        }
+
+        & .spot {
+            @include setEspecialText(rgba(95,9,121,1));
+        }
+
+        & .js {
+            @include setEspecialText(rgb(177, 180, 0));
+        }
+
+        & .css {
+            @include setEspecialText(dodgerblue);
+        }
+
+        & .html {
+            @include setEspecialText(darkorange);
+        }
+
+        & .python {
+            @include setEspecialText(darkseagreen)
+        }
+
+
     }
 }

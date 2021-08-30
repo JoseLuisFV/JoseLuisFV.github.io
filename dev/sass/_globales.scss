@@ -1,10 +1,8 @@
 $primary-color: #192C2D;
-$text-page-color: white;
 $text-projects-color: black;
-
 $copy-font: 'Comfortaa', cursive;
 $title-fonts: 'Martel', serif;
-$font-default-size: 1.6rem;
+$font-default-size: 1.7rem;
 
 
 * {
@@ -18,10 +16,11 @@ html {
 }
 
 body {
+    min-width: 320px;
     background: $primary-color;
     font-family: $copy-font;
     font-size: $font-default-size;
-    color: $text-page-color;
+    color: $primary-color;
 }
 
 section h1{

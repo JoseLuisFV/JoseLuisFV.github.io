@@ -10,10 +10,11 @@ html {
 }
 
 body {
+  min-width: 320px;
   background: #192C2D;
   font-family: "Comfortaa", cursive;
-  font-size: 1.6rem;
-  color: white;
+  font-size: 1.7rem;
+  color: #192C2D;
 }
 
 section h1 {
@@ -23,6 +24,7 @@ section h1 {
 .header {
   padding-block: 24px;
   text-align: center;
+  margin-bottom: 28px;
 }
 
 .header .nav {
@@ -54,7 +56,7 @@ section h1 {
   display: block;
   width: 42px;
   height: 42px;
-  margin: 0 auto 5px;
+  margin: 0 auto 12px;
   background: url("../assets/icons/works-icon.png"), white;
   background-position: center, center;
   background-size: 26px, 100%;
@@ -66,7 +68,7 @@ section h1 {
   display: block;
   width: 42px;
   height: 42px;
-  margin: 0 auto 5px;
+  margin: 0 auto 12px;
   background: url("../assets/icons/about-me-icon.png"), white;
   background-position: center, center;
   background-size: 26px, 100%;
@@ -78,7 +80,7 @@ section h1 {
   display: block;
   width: 42px;
   height: 42px;
-  margin: 0 auto 5px;
+  margin: 0 auto 12px;
   background: url("../assets/icons/contact-icon.png"), white;
   background-position: center, center;
   background-size: 26px, 100%;
@@ -89,6 +91,7 @@ section h1 {
 .header .nav__item--title {
   display: block;
   font-size: 1.5rem;
+  color: white;
   opacity: 0;
   -webkit-transition: opacity ease-in-out 350ms, -webkit-transform ease-in-out 350ms;
   transition: opacity ease-in-out 350ms, -webkit-transform ease-in-out 350ms;
@@ -112,11 +115,9 @@ section h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 34px 75px;
   width: 90%;
   margin: 0 auto;
 }
@@ -125,6 +126,7 @@ section h1 {
   position: relative;
   width: 216px;
   height: 216px;
+  padding-top: 8px;
   margin-bottom: 14px;
   background: linear-gradient(215deg, #5f0979, #00ff90 90%);
   border-radius: 50%;
@@ -133,12 +135,12 @@ section h1 {
 }
 
 .hero__wrapper-img {
-  position: absolute;
-  top: calc(50% - 100px);
-  left: calc(50% - 100px);
   height: 200px;
   width: 200px;
+  margin: 0 auto;
   border-radius: 50%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
 }
 
@@ -147,5 +149,60 @@ section h1 {
   top: -30px;
   width: 100%;
   height: auto;
+}
+
+.hero__wrapper {
+  max-width: 640px;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 16px;
+  border-bottom: 6px solid #00ff90;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(#00ff90, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__text {
+  line-height: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.hero__text .spot {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #5f0979;
+}
+
+.hero__text .js {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #b1b400;
+}
+
+.hero__text .css {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: dodgerblue;
+}
+
+.hero__text .html {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: darkorange;
+}
+
+.hero__text .python {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: darkseagreen;
 }
 /*# sourceMappingURL=style.css.map */

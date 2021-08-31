@@ -17,7 +17,10 @@ html {
 
 body {
     min-width: 320px;
-    background: $primary-color;
+    background: linear-gradient(170deg, $primary-color 600px, transparent 601px);
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    background-position: top;
     font-family: $copy-font;
     font-size: $font-default-size;
     color: $primary-color;

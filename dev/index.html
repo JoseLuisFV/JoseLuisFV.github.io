@@ -52,64 +52,33 @@
                 </p>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2 class="section__title project__title">Proyectos y Trabajos</h2>
-            <div class="grid-wrapper">
-                <article>
-                    <figure>
-                        <img src="https://i.ibb.co/d03TH6W/desktop-design.jpg" alt="desktop-design">
-                    </figure>
-                    <div>
-                        <h3>Titulo</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas amet eveniet minus sequi. Dignissimos quaerat, delectus itaque sit magnam
-                        </p>
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <button>Go to repo</button>
-                        <button>Go to Website</button>
+            <ul class="carousel__viewport">
+                <li id="CarouselSlideOne" tabindex="0" class="carousel__slide">
+
+                    <div class="carousel__snapper">
+                        <a href="#CarouselSlideThree" class="carousel__prev">Go to last slide</a>
+                        <a href="#CarouselSlideTwo" class="carousel__next">Go to next slide</a>
                     </div>
-                </article>
-                <article>
-                    <figure>
-                        <img src="https://i.ibb.co/d03TH6W/desktop-design.jpg" alt="desktop-design">
-                    </figure>
-                    <div>
-                        <h3>Titulo</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas amet eveniet minus sequi. Dignissimos quaerat, delectus itaque sit magnam
-                        </p>
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <button>Go to repo</button>
-                        <button>Go to Website</button>
+
+                </li>
+                <li id="CarouselSlideTwo" tabindex="0" class="carousel__slide">
+
+                    <div class="carousel__snapper">
+                        <a href="#CarouselSlideOne" class="carousel__prev">Go to previus slide</a>
+                        <a href="#CarouselSlideThree" class="carousel__next">Go to next slide</a>
                     </div>
-                </article>
-                <article>
-                    <figure>
-                        <img src="https://i.ibb.co/d03TH6W/desktop-design.jpg" alt="desktop-design">
-                    </figure>
-                    <div>
-                        <h3>Titulo</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas amet eveniet minus sequi. Dignissimos quaerat, delectus itaque sit magnam
-                        </p>
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <button>Go to repo</button>
-                        <button>Go to Website</button>
+                </li>
+                <li id="CarouselSlideThree" tabindex="0" class="carousel__slide">
+
+                    <div class="carousel__snapper">
+                        <a href="#CarouselSlideTwo" class="carousel__prev">Go to previus slide</a>
+                        <a href="#CarouselSlideOne" class="carousel__next">Go to first slide</a>
                     </div>
-                </article>
-            </div>
+                </li>
+            </ul>
+            
         </section>
         <section class="about-me">
 
@@ -117,6 +86,9 @@
         <section class="contact">
             
         </section>
+        <footer>
+            Coded by José Luis Flores Vacio
+        </footer>
     </main>
     <script type="module" src="./js/index.js"></script>
 </body>

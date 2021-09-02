@@ -15,16 +15,33 @@ html {
     font-size: 62.5%;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%, 0% 50%;
+    }
+    50% {
+        background-position: 0% 0%, 100% 50%;
+    } 100% {
+        background-position: 0% 0%, 0% 50%;
+    }
+}
+
 body {
     min-width: 320px;
-    background: linear-gradient(170deg, $primary-color 600px, transparent 601px);
-    background-size: 100% 700px;
-    background-repeat: no-repeat;
-    background-position: top;
+    background: 
+        linear-gradient(170deg, $primary-color 600px, transparent 601px), 
+        linear-gradient(75deg, rgba(95,9,121,1) 10%, #01A5B3, #014F9A);
+    background-size: 100% 700px, 300% 300%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, center;
     font-family: $copy-font;
     font-size: $font-default-size;
     color: $primary-color;
+    animation: gradient 12s ease infinite;
+    scroll-behavior: smooth;
 }
+
+
 
 section h1{
     font-family: $title-fonts;

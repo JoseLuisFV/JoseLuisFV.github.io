@@ -89,27 +89,29 @@
 
 .projects {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
     width: 100%;   
     padding-bottom: 100px;
-    margin-top: 180px;
+    margin-top: 100px;
+    min-height: 600px;
     text-align: center;
     background-image: linear-gradient(-10deg, $primary-color 65%, transparent 65.1% );
     
     &__title {
-        font-size: 3.4rem;
+        font-family: $title-fonts;
+        font-size: 3.2rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        line-height: 4.5rem;
+        margin-bottom: 70px;
     }
 
 
     & .carousel {
         position: relative;
-        width: 94vw;
+        width: 100%;
         max-width: 1320px;
-        padding: 40px 0px;
-        box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), inset 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 0 auto;
 
         &__controls {
             width: 100%;
@@ -157,7 +159,7 @@
 
         &__slide {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             justify-content: center;
             align-content: center;
             gap: 34px;
@@ -167,14 +169,11 @@
             list-style: none;
         }
 
-        &__slide:nth-child(even) {
-            background-color: aqua;
-        }
-
         & .project {
             width: 100%;
-            min-height: 360px;
+            min-height: 340px;
             perspective: 1000px;
+            border-radius: 5px;
 
             &--front {
                 position: absolute;
@@ -184,6 +183,8 @@
                 backface-visibility: hidden;
                 transition: transform 660ms;
                 transform-style: preserve-3d;
+                border-radius: 5px;
+                overflow: hidden;
 
                 img {
                     width: 100%;
@@ -194,14 +195,65 @@
 
             &--back {
                 position: absolute;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
                 height: 100%;
                 width: 100%;
-                text-align: center;
+                padding: 30px 20px;
+                border-radius: 5px;
+                text-align: start;
+                background: rgb(255,255,255);
                 backface-visibility: hidden;
                 transition: transform 660ms;
                 transform-style: preserve-3d;
                 transform: rotateX(180deg);
-                background-color: whitesmoke;
+                
+
+                .project__title {
+                    font-size: 2.8rem;
+                }
+
+                .project__icons {
+                    display: flex;
+                    gap: 10px;
+                }
+
+                .project__ca a {
+                    display: block;
+                    max-width: 180px;
+                    padding: 18px 28px;
+                    margin-bottom: 16px;
+                    box-sizing: content-box;
+                    color: white;
+                    background: linear-gradient(215deg, 
+                    rgba(95,9,121,1), 
+                    #0E018F 90%);
+                    border-radius: 5px;
+                }
+
+                @mixin setIcons ($icon-tec){
+                    width: 42px;
+                    height: 42px;
+                    background-image: url($icon-tec);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    
+                }
+
+                .project__icon--html {
+                    @include setIcons('../assets/icons/icon-html.png')
+                }
+
+                .project__icon--css {
+                    @include setIcons('../assets/icons/icon-css.png')
+                }
+
+                .project__icon--js {
+                    @include setIcons('../assets/icons/icon-js.png')
+                }
+
             }
 
             &:hover .project--front{
@@ -216,6 +268,7 @@
     }
     
 }
+
 
 .about-me {
     width: 100%;

@@ -3,17 +3,19 @@ import { projects } from "./projects.js";
 // Carousel logic
 
 const mover = document.getElementById('CarouselViewport');
-const anchoSlide = document.querySelector('.carousel__slide').clientWidth;
+const carousel = document.querySelector('.carousel__slide');
 
 const buttonPrev = document.getElementById('BotonPrev');
 const buttonNext = document.getElementById('BotonNext');
 
 const toNext = () => {
-  mover.scroll(mover.scrollLeft + anchoSlide, 0);
+    const anchoSlide = carousel.clientWidth;
+    mover.scroll(mover.scrollLeft + anchoSlide, 0);
 }
 
 const toPrev = () => {
-  mover.scroll(mover.scrollLeft - anchoSlide, 0);
+    const anchoSlide = carousel.clientWidth
+    mover.scroll(mover.scrollLeft - anchoSlide, 0);
 }
 
 buttonNext.addEventListener('click', () => {

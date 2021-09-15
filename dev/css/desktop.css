@@ -1,0 +1,72 @@
+.curses {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.curses .carousel__viewport {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  width: 100%;
+  height: 100%;
+}
+
+.curses .carousel__viewport::-webkit-scrollbar {
+  width: 0px;
+}
+
+.curses .carousel__viewport::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.curses .carousel__viewport::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.curses .carousel__viewport .carousel__slide {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  background-color: #940954;
+  color: white;
+}
+
+.curses .carousel__viewport .carousel__slide:nth-child(even) {
+  background-color: #21945D;
+}
+
+@media (hover: hover) {
+  .curses .carousel__viewport .carousel__slide {
+    -webkit-animation-name: tonext;
+            animation-name: tonext;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-duration: 24s;
+            animation-duration: 24s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */

@@ -46,3 +46,92 @@ body {
 section h1{
     font-family: $title-fonts;
 }
+
+.section__title {
+    font-family: $title-fonts;
+    font-size: 3.2rem;
+    color: #33ff99;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 4.5rem;
+    margin-bottom: 70px;
+}
+
+.curve-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.curve-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.curve-top .shape-fill {
+    fill: #192C2D;
+}
+
+
+@keyframes tonext {
+    13% {
+      right: 0;
+    }
+    26% {
+      right: 100%;
+    }
+    39% {
+      right: 200%;
+    }
+    52% {
+      right: 300%;
+    }
+    65% {
+      right: 400%;
+    }
+    78% {
+      right: 500%;
+    }
+    84% {
+      right: 500%;
+    }
+    99% {
+      right: 0;
+    }
+}
+  
+@keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -600%;
+    }
+    98% {
+      left: -600%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+@keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+}

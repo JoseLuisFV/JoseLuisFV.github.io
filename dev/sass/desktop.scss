@@ -1,0 +1,52 @@
+.curses {
+    position: relative;
+    width: 100%;
+    height: 220px;
+
+    .carousel__viewport {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+        height: 100%;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+            
+        .carousel__slide {
+            position: relative;
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            background-color: #940954;
+            color: white;
+
+            &:nth-child(even) {
+                background-color: #21945D;
+            }
+        }
+
+        @media (hover: hover) {
+            .carousel__slide {
+                animation-name: tonext;
+                animation-timing-function: ease;
+                animation-duration: 24s;
+                animation-iteration-count: infinite;
+            }
+        }
+
+    }
+}

@@ -17,14 +17,14 @@
         rgba(95,9,121,1), 
         #0E018F 90%);
         border-radius: 50%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 3px solid #33FF99;
+        
     }
 
     &__wrapper-img {
         height: 240px;
         width: 240px;
         margin: 0 auto;
-        border-radius: 50%;
         overflow: hidden;
     
     }
@@ -85,7 +85,7 @@
     & .carousel {
         position: relative;
         width: 100%;
-        max-width: 1320px;
+        max-width: 1120px;
         margin: 0 auto;
 
         &__controls {
@@ -100,7 +100,7 @@
                 border-radius: 50%;
                 border: none;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
-                background-image: url('../assets/icons/icons8-expand-arrow-50.png');
+                background: url('../assets/icons/icons8-expand-arrow-50.png'), white;
                 background-position: center 8px;
                 background-size: 34px;
                 background-repeat: no-repeat;
@@ -124,7 +124,7 @@
             scroll-behavior: smooth;
             scroll-snap-type: x mandatory;
             width: 90vw;
-            max-width: 1140px;
+            max-width: 1000px;
             margin: auto;
 
             &::-webkit-scrollbar {
@@ -171,6 +171,7 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    object-position: center;
                 }
             }
 
@@ -178,6 +179,8 @@
                 position: absolute;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: baseline;
                 gap: 16px;
                 height: 100%;
                 width: 100%;
@@ -211,17 +214,11 @@
                     rgba(95,9,121,1), 
                     #0E018F 90%);
                     border-radius: 5px;
+                    text-decoration: none;
+
                 }
 
-                @mixin setIcons ($icon-tec){
-                    width: 42px;
-                    height: 42px;
-                    background-image: url($icon-tec);
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    
-                }
+                
 
                 .project__icon--html {
                     @include setIcons('../assets/icons/icon-html.png')
@@ -233,6 +230,10 @@
 
                 .project__icon--js {
                     @include setIcons('../assets/icons/icon-js.png')
+                }
+
+                .project__icon--python {
+                    @include setIcons('../assets/icons/icon-python.png')
                 }
 
             }
@@ -340,4 +341,103 @@
         }
     } 
 
+    .social-media {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 38px;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+        }
+        .title {
+            color: #33ff99;
+        }
+        .icon--linkedin {
+            @include setIcons('../assets/icons/linkedin.png');
+            background-size: cover;
+        }
+
+        .icon--github {
+            @include setIcons('../assets/icons/github-logo.png');
+            background-size: cover;
+        }
+
+        .icon--email {
+            @include setIcons('../assets/icons/gmail-logo.png');
+            background-size: cover;
+        }
+    }
+
+}
+
+
+.contact {
+
+    &__title {
+        margin-top: 60px;
+        margin-bottom: 40px; 
+        text-align: center;
+    }
+    
+    .form-contact {
+
+        width: 92%;
+        margin: 0 auto;
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & label {
+            color: rgba(51,255,153,.90);
+        }
+
+        &__input {
+            padding: 10px 16px;
+            margin-bottom: 18px;
+            font-size: 1.7rem;
+            color: white;
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid rgba(51,255,153,.29);
+            outline: none;
+
+            &::placeholder{
+                font-size: 1.7rem;
+                color: whitesmoke;
+            }
+        }
+
+        &__message {
+            padding: 10px 16px;
+            margin-top: 10px;
+            margin-bottom: 18px;
+            font-size: 1.7rem;
+            color: white;
+            background-color: rgba(51,255,153,.25);
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        &__button {
+            display: block;
+            width: 280px;
+            height: 40px;
+            margin: 0 auto;
+            font-size: 2.2rem;
+            font-weight: 600;
+            background-color: rgba(51,255,153,.49);
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
 }

@@ -384,7 +384,7 @@ section h1 {
   border: none;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: url("../assets/icons/icons8-expand-arrow-50.png"), white;
+  background-image: url("../assets/icons/icons8-expand-arrow-50.png");
   background-position: center 8px;
   background-size: 34px;
   background-repeat: no-repeat;
@@ -538,7 +538,6 @@ section h1 {
   color: white;
   background: linear-gradient(215deg, #5f0979, #0E018F 90%);
   border-radius: 5px;
-  text-decoration: none;
 }
 
 .projects .carousel .project--back .project__icon--html {
@@ -563,15 +562,6 @@ section h1 {
   width: 42px;
   height: 42px;
   background-image: url("../assets/icons/icon-js.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.projects .carousel .project--back .project__icon--python {
-  width: 42px;
-  height: 42px;
-  background-image: url("../assets/icons/icon-python.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -688,67 +678,8 @@ section h1 {
   background-color: rgba(255, 255, 155, 0.2);
 }
 
-.about-me .social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 18px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 38px;
-}
-
 .about-me .social-media a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 6px;
-  text-decoration: none;
-}
-
-.about-me .social-media .title {
-  color: #33ff99;
-}
-
-.about-me .social-media .icon--linkedin {
-  width: 42px;
-  height: 42px;
-  background-image: url("../assets/icons/linkedin.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.about-me .social-media .icon--github {
-  width: 42px;
-  height: 42px;
-  background-image: url("../assets/icons/github-logo.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.about-me .social-media .icon--email {
-  width: 42px;
-  height: 42px;
-  background-image: url("../assets/icons/gmail-logo.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  color: #33FF99;
 }
 
 .contact__title {

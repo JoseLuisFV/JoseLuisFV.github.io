@@ -78,6 +78,14 @@ section h1{
     fill: #192C2D;
 }
 
+@mixin setIcons ($icon-tec){
+  width: 42px;
+  height: 42px;
+  background-image: url($icon-tec);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 @keyframes tonext {
     13% {

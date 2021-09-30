@@ -1,0 +1,70 @@
+
+.projects {
+    .carousel__viewport {
+        .project--back {
+            align-items: center;
+        }
+    }
+}
+
+
+
+.carousel__slide {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    grid-template-areas: 
+        "fchild schild"
+        "tchild tchild";
+    gap: 34px;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    list-style: none;
+
+    .project:first-child {
+        grid-area: fchild;
+    }
+
+    .project:nth-child(2) {
+        grid-area: schild;
+    }
+    .project:last-child {
+        grid-area: tchild;
+    }
+
+}
+
+
+
+.about-me {
+    .degree {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1.16);
+    }
+}
+
+.form-contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 430px));
+    grid-template-areas: 
+        "title title"
+        "first-child second-child"
+        "third-child third-child";
+    gap: 40px;
+    justify-content: center;
+
+
+    .first-child {
+        grid-area: first-child;
+    }
+
+    .second-child {
+        grid-area: second-child;
+    }
+
+    .third-child {
+        grid-area: third-child;
+    }
+}

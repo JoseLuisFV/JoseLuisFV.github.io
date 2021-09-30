@@ -1,52 +1,182 @@
-.curses {
-    position: relative;
-    width: 100%;
-    height: 220px;
+.hero {
+    min-height: 75vh;
 
-    .carousel__viewport {
+    &__wrapper--decorator {
+        position: relative;
+        width: 346px;
+        height: 346px;
+        padding-top: 28px;
+    }
+
+    &__wrapper-img {
+        height: 290px;
+        width: 290px;
+    }
+
+
+    &__title {
         display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;
-        width: 100%;
-        height: 100%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 4.0rem;
+        letter-spacing: 8px;
 
-        &::-webkit-scrollbar {
-            width: 0px;
+        span:nth-child(1) {
+            align-self: flex-start;
+            font-size: 6.2rem;
+            line-height: 6.0rem;
         }
-        &::-webkit-scrollbar-track {
-            background: transparent;
+        span:nth-child(2){
+            align-self: flex-start;
+            margin-left: 90px;
+            font-size: 5.2rem;
+            line-height: 5.0rem;
         }
-        &::-webkit-scrollbar-thumb {
-            background: transparent;
+
+        span:nth-child(3) {
+            align-self: flex-end;
+            margin-right: 70px;
+            font-size: 6.2rem;
+            line-height: 6.0rem;
         }
+
+        span:nth-child(4) {
             
+            font-size: 5.2rem;
+            line-height: 5.0rem;
+        }
+
+        span:nth-child(even) {
+            color: aquamarine;
+        }
+    }
+
+    &__wrapper {
+        border-radius: 0px;
+        border-left: none;
+    }
+}
+
+.projects {
+
+    .carousel {
+        max-width: 1280px;
+    }
+    
+    .carousel__viewport {
+        max-width: 1200px;
+
         .carousel__slide {
-            position: relative;
-            flex: 0 0 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(300px, 400px));
+            grid-template-areas: none;
+            gap: 20px;
+            flex-shrink: 0;
             width: 100%;
-            height: 100%;
+            height: auto;
             list-style: none;
-            background-color: #940954;
-            color: white;
+        
+            .project:first-child {
+                grid-column-start: 1;
+                grid-column-end: span 1;
+            }
+        
+            .project:nth-child(2) {
+                grid-column-start: 2;
+                grid-column-end: span 1;
+            }
+            .project:last-child {
+                grid-column-start: 3;
+                grid-column-end: span 1;
+            } 
+        
+        }
 
-            &:nth-child(even) {
-                background-color: #21945D;
+        .project {
+            .project__ca a {
+                width: 240px;
+                transition: transform 0.3s ease-in-out;
+    
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    } 
+}
+
+.curve-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 170px;
+}
+
+.about-me {
+
+    &__title {
+        padding-top: 60px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 0.3fr 0.7fr;
+        grid-template-areas: 
+            "degree curses"
+            "social curses";
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+
+        .degree {
+            grid-area: degree;
+            justify-self: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
+
+            p:first-child{
+                margin-bottom: 10px;
             }
         }
 
-        @media (hover: hover) {
-            .carousel__slide {
-                animation-name: tonext;
-                animation-timing-function: ease;
-                animation-duration: 24s;
-                animation-iteration-count: infinite;
+        .curses {
+            grid-area: curses;
+            max-height: 520px;
+            overflow-y: scroll;
+
+            a {
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
 
+        .social-media {
+            grid-area: social;
+            align-self: center;
+            margin-top: 0px;
+
+            a {
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+             
+        }
+    }
+}
+
+.contact {
+    button {
+        transition: transform .3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

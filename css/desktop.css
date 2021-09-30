@@ -1,0 +1,118 @@
+.hero {
+  min-height: 75vh;
+}
+
+.hero__wrapper--decorator {
+  position: relative;
+  width: 346px;
+  height: 346px;
+  padding-top: 28px;
+}
+
+.hero__wrapper-img {
+  height: 290px;
+  width: 290px;
+}
+
+.hero__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4.0rem;
+  letter-spacing: 8px;
+}
+
+.hero__title span:nth-child(1) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 6.2rem;
+  line-height: 6.0rem;
+}
+
+.hero__title span:nth-child(2) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 90px;
+  font-size: 5.2rem;
+  line-height: 5.0rem;
+}
+
+.hero__title span:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 70px;
+  font-size: 6.2rem;
+  line-height: 6.0rem;
+}
+
+.hero__title span:nth-child(4) {
+  font-size: 5.2rem;
+  line-height: 5.0rem;
+}
+
+.hero__title span:nth-child(even) {
+  color: aquamarine;
+}
+
+.hero__wrapper {
+  border-radius: 0px;
+  border-left: none;
+}
+
+.projects .carousel__viewport .project .project__ca a {
+  width: 240px;
+}
+
+.curve-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 170px;
+}
+
+.about-me__title {
+  padding-top: 60px;
+}
+
+.about-me__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.3fr 0.7fr;
+      grid-template-columns: 0.3fr 0.7fr;
+      grid-template-areas: "degree curses" "social curses";
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+}
+
+.about-me__wrapper .degree {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: degree;
+}
+
+.about-me__wrapper .curses {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: curses;
+  max-height: 520px;
+  overflow-y: scroll;
+}
+
+.about-me__wrapper .social-media {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: social;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+/*# sourceMappingURL=desktop.css.map */

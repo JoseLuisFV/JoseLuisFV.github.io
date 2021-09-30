@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:740px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1080px)">
 </head>
 <body>
     <main>
@@ -46,19 +48,74 @@
             </div>
             
             <div class="hero__wrapper">
-                <h1 class="hero__title">I am José Luis Flores Vacio</h1>
+                <h1 class="hero__title"><span>José</span> <span>Luis</span> <span>Flores</span> <span>Vacio</span> </h1>
                 <p class="hero__text">
                     I learned and keep learning about <span class="spot">software developer</span>.
                 </p>
                 <p class="hero__text">
-                    Some tecnologies that i know are <span class="js">JavaScript</span>, <span class="html">HTML</span>, <span class="css">CSS</span>, <span class="python">Python</span>. but please see my projects, works or other things that can say more about me. 
+                    Some technologies that I know are <span class="js">JavaScript</span>, <span class="html">HTML</span>, <span class="css">CSS</span>, <span class="python">Python</span>. But please see my projects, works or other things that can say more about me. 
                 </p>
             </div>
         </section>
         <section id="projects" class="projects">
-            <h2 class="section__title projects__title">Proyectos & Trabajos</h2>
+            <h2 class="section__title projects__title">Projects & Works</h2>
             <article class="carousel">
                 <ul id="CarouselViewport" class="carousel__viewport" id="Carousel">
+
+                    <li class="carousel__slide">
+
+                        <article class="project">
+                            <figure class="project--front">
+                                <img src="https://i.ibb.co/MStKW6z/desktop-preview.jpg"  alt="desktop-design">
+                            </figure>
+                            <div class="project--back">
+                                <h3 class="project__title">Blogr Landing Page</h3>
+                                <div class="project__icons">
+                                    <div class="project__icon--html"></div>
+                                    <div class="project__icon--css"></div>
+                                    <div class="project__icon--js"></div>
+                                </div>
+                                <div class="project__ca">
+                                    <a href="https://github.com/JoseLuisFV/BlogrLandingPage">Go to repo</a>
+                                    <a href="https://joseluisfv-blogr-landing-page.netlify.app/">Go to Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <figure class="project--front">
+                                <img src="https://i.ibb.co/2qLjvhk/Pi-experiment-preview.png"  alt="desktop-design">
+                            </figure>
+                            <div class="project--back">
+                                <h3 class="project__title">Calculo Pi mediante estadistica</h3>
+                                <div class="project__icons">
+                                    <div class="project__icon--python"></div>
+                                </div>
+                                <div class="project__ca">
+                                    <a href=https://colab.research.google.com/drive/1I9kP2C6VQfYc64gZX3aFgpLeTJka9CR6?usp=sharing>Go to Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <figure class="project--front">
+                                <img src="https://i.ibb.co/SwgcChm/desktop-preview.png" alt="desktop-design">
+                            </figure>
+                            <div class="project--back">
+                                <h3 class="project__title">Batatabip Landing Page</h3>
+                                <div class="project__icons">
+                                    <div class="project__icon--html"></div>
+                                    <div class="project__icon--css"></div>
+                                    <div class="project__icon--js"></div>
+                                </div>
+                                <div class="project__ca">
+                                    <a href="https://github.com/JoseLuisFV/BatatabipLandingPage">Go to repo</a>
+                                    <a href="https://joseluisfv-batatabit-landing.netlify.app">Go to Demo</a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
                     <li class="carousel__slide">
                         <article class="project">
                             <figure class="project--front">
@@ -96,7 +153,7 @@
 
                         <article class="project">
                             <figure class="project--front">
-                                <img src="https://i.ibb.co/GxCcMbx/Desktop-view.png" alt="desktop-design">
+                                <img src="https://i.ibb.co/ZdyBfdb/Desktop-view.png" alt="desktop-design">
                             </figure>
                             <div class="project--back">
                                 <h3 class="project__title">Resistor Calculator</h3>
@@ -168,9 +225,6 @@
                         
                     </li>
                     
-                    <li class="carousel__slide">
-
-                    </li>
                 </ul>
                 <div class="carousel__controls">
                     <button id="BotonPrev" class="previus"></button>
@@ -185,64 +239,104 @@
                 </svg>
             </div>
             <h2 class="section__title about-me__title">About Me</h2>
-            <article class="degree">
-                <h3 class="degree__title">
-                    Bachelor degree in <span>Mechatronic Engeneer </span>
-                </h3>
-                <p>
-                    My hobbies are read, play videogames with friends and watch some misterius series or movies, i have interest on <span>how we learn</span>, <span>Philosophy</span> and <span>maths</span>.
-                </p>
-            </article>
-            <article class="curses">
-                <ul id="CarouselViewport" class="carousel__viewport" id="Carousel">
-                    <li class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <h4 class="curso__title">Curso de HTML y CSS</h4>
-                            <a class="curso__ca" target="_blank" href="./diplomas/diploma-html-css.pdf">See more</a>
+            <div class=about-me__wrapper>
+                <article class="degree">
+                    <h3 class="degree__title">
+                        Bachelor degree in <span>Mechatronic Engeneer </span>
+                    </h3>
+                    <p>
+                        My hobbies are read, play videogames with friends and watch some mysterious series or movies, I have interest on <span>how we learn</span>, <span>Philosophy</span> and <span>math</span>.
+                    </p>
+                    <p>
+                        I'm looking for <span>opportunities in software developer</span> (Frontend or Backend).
+                    </p>
+                </article>
+                <article class="curses">
+                    <ul id="CarouselViewport" class="carousel__viewport" id="Carousel">
+                        <li class="carousel__slide">
+                            <div class="carousel__snapper">
+                                <h4 class="curso__title">Curso de HTML y CSS</h4>
+                                <a class="curso__ca" target="_blank" href="./diplomas/diploma-html-css.pdf">See more</a>
+                            </div>
+                        </li>
+                        <li class="carousel__slide">
+                            <div class="carousel__snapper">
+                                <h4 class="curso__title">Curso de Python algoritmos y POO</h4>
+                                <a class="curso__ca" target="_blank" href="./diplomas/diploma-poo-python.pdf">See more</a>
+                            </div>
+                        </li>
+                        <li class="carousel__slide">
+                            <div class="carousel__snapper">
+                                <h4 class="curso__title">Curso de Mobile First</h4>
+                                <a class="curso__ca" target="_blank" href="./diplomas/diploma-mobile-first.pdf">See more</a>
+                            </div> 
+                        </li>
+                        <li class="carousel__slide">
+                            <div class="carousel__snapper">
+                                <h4 class="curso__title">Curso de Frontend developer</h4>
+                                <a class="curso__ca" target="_blank" href="./diplomas/diploma-frontend-developer-2019.pdf">See more</a>
+                            </div>
+                        </li>
+                        <li class="carousel__slide">
+                            <div class="carousel__snapper">
+                                <h4 class="curso__title">Curso de Manipulacion del DOM</h4>
+                                <a class="curso__ca" target="_blank" href="./diplomas/diploma-dom.pdf">See more</a>
+                            </div>
+                        </li>
+                        <li class="carousel__slide">
+                            <div class="carousel__snapper">
+                                <h4 class="curso__title">Curso de Base de Datos</h4>
+                                <a class="curso__ca" href="./diplomas/diploma-bd.pdf">See more</a>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+                <article class="social-media">
+                    <a href="https://www.linkedin.com/in/jos%C3%A9-luis-flores-vacio-882833202/"  target= "_blank" class="linkedin">
+                        <div class="icon--linkedin"></div>
+                        <div class="title">
+                            Linkedin
                         </div>
-                    </li>
-                    <li class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <h4 class="curso__title">Curso de Python algoritmos y POO</h4>
-                            <a class="curso__ca" target="_blank" href="./diplomas/diploma-poo-python.pdf">See more</a>
+                    </a>
+                    <a href="https://github.com/JoseLuisFV" target="_blank" class="github">
+                        <div class="icon--github"></div>
+                        <div class="title">
+                            GitHub
                         </div>
-                    </li>
-                    <li class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <h4 class="curso__title">Curso de Mobile First</h4>
-                            <a class="curso__ca" target="_blank" href="./diplomas/diploma-mobile-first.pdf">See more</a>
-                        </div> 
-                    </li>
-                    <li class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <h4 class="curso__title">Curso de Frontend developer</h4>
-                            <a class="curso__ca" target="_blank" href="./diplomas/diploma-frontend-developer-2019.pdf">See more</a>
+                    </a>
+                    <a href="mailto:josefvacio@gmail.com" target="_blank" class="email">
+                        <div class="icon--email"></div>
+                        <div class="title">
+                            Gmail
                         </div>
-                    </li>
-                    <li class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <h4 class="curso__title">Curso de Manipulacion del DOM</h4>
-                            <a class="curso__ca" target="_blank" href="./diplomas/diploma-dom.pdf">See more</a>
-                        </div>
-                    </li>
-                    <li class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <h4 class="curso__title">Curso de Base de Datos</h4>
-                            <a class="curso__ca" href="./diplomas/diploma-bd.pdf">See more</a>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-            <article class="social-media">
-                <a href="" class="linkedin"></a>
-                <a href="" class="blog"></a>
-            </article>
-        </section>
-        <section class="contact">
+                    </a>
+                </article>
+            </div>
             
         </section>
+        <section id="contact" class="contact">
+            <h2 class="contact__title section__title">
+                contact
+            </h2>
+            <form class="form-contact" action="https://formspree.io/f/xknkyjgd" method="POST">
+                <div class="form-contact__container first-child">
+                    <label for="Name">Name</label>
+                    <input id="Name" name="name" type="text" class="form-contact__input" placeholder="name" required>
+                    <label for="Email">Email</label>
+                    <input id="Email" name="email" type="email" class="form-contact__input" placeholder="example@email.com" required>
+                    <label for="Subject">Subject</label>
+                    <input id="Subject" name="subject" type="text" class="form-contact__input" placeholder="subject" required>
+                </div>
+                <div class="form-contact__container second-child">
+                    <label for="Message">Message</label>
+                    <textarea class=form-contact__message name="message" id="Message" cols="30" rows="10" required></textarea>
+                </div>
+                <button class="form-contact__button third-child" type="submit">Send</button>
+            </form>
+        </section>
         <footer>
-            Coded by José Luis Flores Vacio
+            <p>Portafolio Build and Design by <span>@JoseLuisFV</span></p> 
+            
         </footer>
     </main>
     <script type="module" src="./js/index.js"></script>

@@ -1,72 +1,215 @@
-.curses {
-  position: relative;
-  width: 100%;
-  height: 220px;
+.hero {
+  min-height: 75vh;
 }
 
-.curses .carousel__viewport {
+.hero__wrapper--decorator {
+  position: relative;
+  width: 346px;
+  height: 346px;
+  padding-top: 28px;
+}
+
+.hero__wrapper-img {
+  height: 290px;
+  width: 290px;
+}
+
+.hero__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4.0rem;
+  letter-spacing: 8px;
+}
+
+.hero__title span:nth-child(1) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 6.2rem;
+  line-height: 6.0rem;
+}
+
+.hero__title span:nth-child(2) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 90px;
+  font-size: 5.2rem;
+  line-height: 5.0rem;
+}
+
+.hero__title span:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 70px;
+  font-size: 6.2rem;
+  line-height: 6.0rem;
+}
+
+.hero__title span:nth-child(4) {
+  font-size: 5.2rem;
+  line-height: 5.0rem;
+}
+
+.hero__title span:nth-child(even) {
+  color: aquamarine;
+}
+
+.hero__wrapper {
+  border-radius: 0px;
+  border-left: none;
+}
+
+.projects .carousel {
+  max-width: 1280px;
+}
+
+.projects .carousel__viewport {
+  max-width: 1200px;
+}
+
+.projects .carousel__viewport .carousel__slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 400px))[3];
+      grid-template-columns: repeat(3, minmax(300px, 400px));
+      grid-template-areas: none;
+  gap: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 100%;
-  height: 100%;
-}
-
-.curses .carousel__viewport::-webkit-scrollbar {
-  width: 0px;
-}
-
-.curses .carousel__viewport::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.curses .carousel__viewport::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
-.curses .carousel__viewport .carousel__slide {
-  position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
+  height: auto;
   list-style: none;
-  background-color: #940954;
-  color: white;
 }
 
-.curses .carousel__viewport .carousel__slide:nth-child(even) {
-  background-color: #21945D;
+.projects .carousel__viewport .carousel__slide .project:first-child {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
 }
 
-@media (hover: hover) {
-  .curses .carousel__viewport .carousel__slide {
-    -webkit-animation-name: tonext;
-            animation-name: tonext;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-    -webkit-animation-duration: 24s;
-            animation-duration: 24s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
+.projects .carousel__viewport .carousel__slide .project:nth-child(2) {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+}
+
+.projects .carousel__viewport .carousel__slide .project:last-child {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+}
+
+.projects .carousel__viewport .project .project__ca a {
+  width: 240px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.projects .carousel__viewport .project .project__ca a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.curve-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 170px;
+}
+
+.about-me__title {
+  padding-top: 60px;
+}
+
+.about-me__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.3fr 0.7fr;
+      grid-template-columns: 0.3fr 0.7fr;
+      grid-template-areas: "degree curses" "social curses";
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+}
+
+.about-me__wrapper .degree {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: degree;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.about-me__wrapper .degree p:first-child {
+  margin-bottom: 10px;
+}
+
+.about-me__wrapper .curses {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: curses;
+  max-height: 520px;
+  overflow-y: scroll;
+}
+
+.about-me__wrapper .curses a {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.about-me__wrapper .curses a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.about-me__wrapper .social-media {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: social;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 0px;
+}
+
+.about-me__wrapper .social-media a {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.about-me__wrapper .social-media a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contact button {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.contact button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=desktop.css.map */

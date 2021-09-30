@@ -1,5 +1,18 @@
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px;
     padding: 20px 0px;
+    margin: 66px auto 0;
     text-align: center;
-    color: coral;
+    color: white;
+    background-color: $primary-color;
+
+    p {
+        text-align: center;
+        span {
+            color: #33ff99;
+        }
+    }
 }

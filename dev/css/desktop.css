@@ -135,23 +135,28 @@
 .about-me__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.3fr 0.7fr;
-      grid-template-columns: 0.3fr 0.7fr;
+  -ms-grid-columns: 0.34fr 0.66fr;
+      grid-template-columns: 0.34fr 0.66fr;
       grid-template-areas: "degree curses" "social curses";
   max-width: 1200px;
+  padding-right: 0px;
+  padding-left: 16px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 120px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .about-me__wrapper .degree {
+  width: 86%;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: degree;
   -ms-grid-column-align: center;
       justify-self: center;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0;
+  padding-top: 20px;
 }
 
 .about-me__wrapper .degree p:first-child {

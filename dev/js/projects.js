@@ -1,59 +1,125 @@
 const projects = [
-    {
-        "title": "Stats card Component",
-        "description": "This work is a challenge from Frontend Mentor, in this challege i create a card component is resposive , i implement mobilefirst, BEM and Flexbox",
-        "icons" : {
-            "html": "../assets/icons/icon-html.png",
-            "css": "../assets/icons/icon-css.png",
-        },
-        "img": "https://i.ibb.co/d03TH6W/desktop-design.jpg" 
-    },
-
-    
-    {
-        "title": "3 Column Card",
-        "description": "This work is a challenge from Frontend Mentor, in this challege i create a card that contains 3 kind of car in rent with their description, i implement mobilefirst, BEM and Flexbox",
-        "icons" : {
-            "html": "../assets/icons/icon-html.png",
-            "css": "../assets/icons/icon-css.png",
-        },
-        "img": "https://i.ibb.co/d03TH6W/desktop-design.jpg"
-    },
 
     {
-        "title": "FAQ accordion card",
-        "description": "This work is a challenge from Frontend Mentor, in this challege i create a FAQ accordion, it's responsive, when you click on a question our answear is oponed, i implement mobilefirst, BEM and Flexbox",
-        "icons" : {
-            "html": "../assets/icons/icon-html.png",
-            "css": "../assets/icons/icon-css.png",
-            "js": "../assets/icons/icon-js.png"
-        },
-        "img": "https://i.ibb.co/d03TH6W/desktop-design.jpg"
-    },
-
-    {
-        "title": "Social Proof Section",
-        "description": "This work is a challenge from Frontend Mentor, in i create a section that contains a social proof about product's quality, it is responsive, i implemnt mobilefirst, Flexbox, BEM and some transitions on desktop view",
-        "icons" : {
-            "html": "../assets/icons/icon-html.png",
-            "css": "../assets/icons/icon-css.png",
-        },
-        "img": "https://i.ibb.co/d03TH6W/desktop-design.jpg"
-    },
-
-    {
-        "title": "Article preview component",
-        "description": "This work is a challenge from Frontend Mentor, in i create a card component that it's a preview about an article, it is responsive, i implemnt mobilefirst, Flexbox, BEM and some transitions",
+        "title": "Blogr Landing Page",
         "icons" : {
             "html": "../assets/icons/icon-html.png",
             "css": "../assets/icons/icon-css.png",
             "js": "../assets/icons/icon-js.png",
         },
-        "img": "https://i.ibb.co/d03TH6W/desktop-design.jpg"
+        "img": "https://i.ibb.co/MStKW6z/desktop-preview.jpg",
+        "cas": {
+            "demo": "https://joseluisfv-blogr-landing-page.netlify.app/",
+            "repo": "https://github.com/JoseLuisFV/BlogrLandingPage" 
+        } 
+    },
+
+    {
+        "title": "Calculo de Pi Por Estadística",
+        "icons" : {
+            "python": "../assets/icons/icon-python.png",
+        },
+        "img": "https://i.ibb.co/2qLjvhk/Pi-experiment-preview.png",
+        "cas": {
+            "demo": "https://colab.research.google.com/drive/1I9kP2C6VQfYc64gZX3aFgpLeTJka9CR6?usp=sharing"
+        } 
+    },
+
+    {
+        "title": "Batatabip Landing Page",
+        "icons" : {
+            "html": "../assets/icons/icon-html.png",
+            "css": "../assets/icons/icon-css.png",
+            "js": "../assets/icons/icon-js.png"
+        },
+        "img": "https://i.ibb.co/SwgcChm/desktop-preview.png",
+        "cas": {
+            "demo": "https://joseluisfv-batatabit-landing.netlify.app",
+            "repo": "https://github.com/JoseLuisFV/BatatabipLandingPage"
+        } 
+    },
+
+    {
+        "title": "Social Proof Section",
+        "icons" : {
+            "html": "../assets/icons/icon-html.png",
+            "css": "../assets/icons/icon-css.png",
+        },
+        "img": "https://i.ibb.co/NWS68gF/desktop-design.jpg",
+        "cas": {
+            "demo": "https://joseluisfv-social-proof-challenge.netlify.app",
+            "repo": "https://github.com/JoseLuisFV/challengeSocialProof"
+        } 
+    },
+
+    {
+        "title": "Grid Testimonials",
+        "icons" : {
+            "html": "../assets/icons/icon-html.png",
+            "css": "../assets/icons/icon-css.png",
+        },
+        "img": "https://i.ibb.co/sJm6PP3/desktop-design.jpg",
+        "cas": {
+            "demo": "https://joseluisfv-grid-testimonials.netlify.app",
+            "repo": "https://github.com/JoseLuisFV/challengeGridTestimonials"
+        } 
+    },
+    {
+        "title": "Resistor Calculator",
+        "icons" : {
+            "html": "../assets/icons/icon-html.png",
+            "css": "../assets/icons/icon-css.png",
+            "js": "../assets/icons/icon-js.png",
+        },
+        "img": "https://i.ibb.co/ZdyBfdb/Desktop-view.png",
+        "cas": {
+            "demo": "https://joseluifv-calculator-resistor.netlify.app/",
+            "repo": "https://github.com/JoseLuisFV/CalculadoraDeResistencia"
+        } 
+
     },
 
 
+    {
+        "title": "Stats card Component",
+        "icons" : {
+            "html": "../assets/icons/icon-html.png",
+            "css": "../assets/icons/icon-css.png",
+        },
+        "img": "https://i.ibb.co/d03TH6W/desktop-design.jpg",
+        "cas": {
+            "demo": "https://joseluisfv-card-component.netlify.app",
+            "repo": "https://github.com/JoseLuisFV/challenge-card-component"
+        }  
+    },
 
+    
+    {
+        "title": "3 Column Card Service",
+        "icons" : {
+            "html": "../assets/icons/icon-html.png",
+            "css": "../assets/icons/icon-css.png",
+        },
+        "img": "https://i.ibb.co/9yhbGtN/desktop-design.jpg",
+        "cas": {
+            "demo": "https://joseluisfv-3-column-card.netlify.app/",
+            "repo": "https://github.com/JoseLuisFV/3ColumnCard"
+        } 
+    },
+
+    {
+        "title": "FAQ accordion card",
+        "icons" : {
+            "html": "../assets/icons/icon-html.png",
+            "css": "../assets/icons/icon-css.png",
+            "js": "../assets/icons/icon-js.png"
+        },
+        "img": "https://i.ibb.co/vm7bjvm/desktop-design.jpg",
+        "cas": {
+            "demo": "https://joseluisfv-faq-accordion.netlify.app",
+            "repo": "https://github.com/JoseLuisFV/ChallengeFaqAccordionCard"
+        } 
+    }
 ]
 
 export { projects };

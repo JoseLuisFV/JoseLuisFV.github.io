@@ -73,40 +73,6 @@
   max-width: 1200px;
 }
 
-.projects .carousel__viewport .carousel__slide {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 400px))[3];
-      grid-template-columns: repeat(3, minmax(300px, 400px));
-      grid-template-areas: none;
-  gap: 20px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 100%;
-  height: auto;
-  list-style: none;
-}
-
-.projects .carousel__viewport .carousel__slide .project:first-child {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-column-span: 1;
-      grid-column-end: span 1;
-}
-
-.projects .carousel__viewport .carousel__slide .project:nth-child(2) {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-column-span: 1;
-      grid-column-end: span 1;
-}
-
-.projects .carousel__viewport .carousel__slide .project:last-child {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  -ms-grid-column-span: 1;
-      grid-column-end: span 1;
-}
 
 .projects .carousel__viewport .project .project__ca a {
   width: 240px;

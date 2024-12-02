@@ -1,4 +1,16 @@
 const projects = [
+    {
+        "title": "Calculator",
+        "icons": {
+            "vue": "../assets/icons/icon-vue.png"
+        },
+        "img": "https://i.ibb.co/Px5zZNw/calc-preview.png",
+        "cas": {
+            "demo": "https://joseluisfv-calculator.netlify.app/",
+            "repo": "https://github.com/JoseLuisFV/calculatorChallenge"
+        }
+
+    },
 
     {
         "title": "Blogr Landing Page",
@@ -78,32 +90,17 @@ const projects = [
         } 
 
     },
-
-
-    {
-        "title": "Stats card Component",
-        "icons" : {
-            "html": "../assets/icons/icon-html.png",
-            "css": "../assets/icons/icon-css.png",
-        },
-        "img": "https://i.ibb.co/d03TH6W/desktop-design.jpg",
-        "cas": {
-            "demo": "https://joseluisfv-card-component.netlify.app",
-            "repo": "https://github.com/JoseLuisFV/challenge-card-component"
-        }  
-    },
-
     
     {
-        "title": "3 Column Card Service",
+        "title": "Tracking Dashboard",
         "icons" : {
             "html": "../assets/icons/icon-html.png",
             "css": "../assets/icons/icon-css.png",
         },
-        "img": "https://i.ibb.co/9yhbGtN/desktop-design.jpg",
+        "img": "https://i.ibb.co/mJC5rs5/tracking-dashboard-preview.png",
         "cas": {
-            "demo": "https://joseluisfv-3-column-card.netlify.app/",
-            "repo": "https://github.com/JoseLuisFV/3ColumnCard"
+            "demo": "https://joseluisfv-tracking-dashboard.netlify.app/",
+            "repo": "https://github.com/JoseLuisFV/Tracking-dashboard"
         } 
     },
 

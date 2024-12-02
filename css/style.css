@@ -370,37 +370,6 @@ section h1 {
   margin: 0 auto;
 }
 
-.projects .carousel__controls {
-  width: 100%;
-  position: absolute;
-  top: calc(50% - 20px);
-}
-
-.projects .carousel__controls .previus, .projects .carousel__controls .next {
-  position: absolute;
-  height: 46px;
-  width: 46px;
-  border-radius: 50%;
-  border: none;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: url("../assets/icons/icons8-expand-arrow-50.png"), white;
-  background-position: center 8px;
-  background-size: 34px;
-  background-repeat: no-repeat;
-}
-
-.projects .carousel__controls .previus {
-  left: 8px;
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
-}
-
-.projects .carousel__controls .next {
-  right: 8px;
-  -webkit-transform: rotateZ(-90deg);
-          transform: rotateZ(-90deg);
-}
 
 .projects .carousel__viewport {
   display: -webkit-box;
@@ -410,13 +379,15 @@ section h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  overflow-x: scroll;
+  flex-wrap: wrap;
+  justify-content: center;
   scroll-behavior: smooth;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
   width: 90vw;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
+  gap: 34px;
 }
 
 .projects .carousel__viewport::-webkit-scrollbar {
@@ -450,11 +421,16 @@ section h1 {
 }
 
 .projects .carousel .project {
-  width: 100%;
+  flex-grow: 1;
+  width: 360px;
   min-height: 340px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   border-radius: 5px;
+}
+
+.projects .carousel .project:nth-child(4n) {
+  width: 62%;
 }
 
 .projects .carousel .project--front {
@@ -572,6 +548,15 @@ section h1 {
   width: 42px;
   height: 42px;
   background-image: url("../assets/icons/icon-python.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects .carousel .project--back .project__icon--vue {
+  width: 42px;
+  height: 42px;
+  background-image: url("../assets/icons/icon-vue.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

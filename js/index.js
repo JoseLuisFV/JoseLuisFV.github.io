@@ -1,15 +1,13 @@
 import { projects } from "./projects.js";
 
 
-let nodos = []
+const viewPort = document.getElementById('CarouselViewport');
 
-projects.forEach((project, count = 0) => {
-    count += 1;
-    console.log(count);
+const fragmentsProjects = projects.map((project) => {
     const elementProject = addProject(project);
-    nodos.push(elementProject);
-    console.log(nodos);
-    if (count % 3 == 0){
+    viewPort.append(elementProject);
+    return elementProject
+    /*if (count % 3 == 0){
         
         console.log(count);
         const slide = addSlide(nodos);
@@ -18,10 +16,12 @@ projects.forEach((project, count = 0) => {
         while(nodos.length){
             nodos.pop();
         }
-    }
-    
-    
+    }*/   
 });
+
+
+
+
 
 function addSlide(nodos) {
     const slide = document.createElement('li');
@@ -99,27 +99,3 @@ function addCallToActions(cas) {
     divCas.append(fragmentCas);
     return divCas;
 }
-
-const mover = document.getElementById('CarouselViewport');
-const carousel = document.querySelector('.carousel__slide');
-
-const buttonPrev = document.getElementById('BotonPrev');
-const buttonNext = document.getElementById('BotonNext');
-
-const toNext = () => {
-    const anchoSlide = carousel.clientWidth;
-    mover.scroll(mover.scrollLeft + anchoSlide, 0);
-}
-
-const toPrev = () => {
-    const anchoSlide = carousel.clientWidth
-    mover.scroll(mover.scrollLeft - anchoSlide, 0);
-}
-
-buttonNext.addEventListener('click', () => {
-    toNext();
-});
-
-buttonPrev.addEventListener('click', () => {
-    toPrev();
-})
